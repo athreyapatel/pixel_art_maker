@@ -1,15 +1,26 @@
 body {
     text-align: center;
+  background-image:
+  url("https://images7.alphacoders.com/322/322938.png");
 }
 
 h1 {
     font-family: Monoton;
-    font-size: 70px;
-    margin: 0.2em;
+    font-size: 60px;
+    margin: 0.3em;
+}
+.effect{
+  transition:transform .4s;
+}
+.effect:hover{
+  transform:scale(1.10);
 }
 
 h2 {
-    margin: 1em 0 0.25em;
+    margin: 2em 0 0.25em;
+}
+font{
+  font-style:sans-serif;
 }
 
 h2:first-of-type {
@@ -25,6 +36,8 @@ td {
 table {
     border-collapse: collapse;
     margin: 0 auto;
+  /* Start http://www.cursors-4u.com */ 
+  cursor: url(http://cur.cursors-4u.net/games/gam-16/gam1500.cur),   auto !important;  /* End http://www.cursors-4u.com */
 }
 
 tr {
@@ -38,3 +51,5 @@ td {
 input[type=number] {
     width: 6em;
 }
+
+

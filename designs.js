@@ -2,6 +2,7 @@ const table = $("#pixelCanvas");
 let height;
 let width;
 let pickColor= 'black';
+patel=$(table);
 
 // When size is submitted by the user, call makeGrid()
 
@@ -39,21 +40,21 @@ $('#sizePicker').submit(function( event ) {
 
   //Apply color to cell on click
 
-  $(table).on('click','td',function(){
-      $(this).css("background-color", pickColor);
+  patel.on('click','td',function(){
+   $(this).css("background-color", pickColor);
       //console.log("clicked");
   });
 
   // Clear color to cell on double click
 
-  $(table).on('dblclick','td',function(){
-    $(this).css("background-color", '');
+  patel.on('dblclick','td',function(){
+   $(this).css("background-color", '');
     //console.log("clicked");
 });
 
 // Drag Mouse to fill color
 
-$(table).mousedown(function() {
+patel.mousedown(function() {
     $('td').bind('mouseover',function(){
         $(this).css("background-color", pickColor);
     });
@@ -65,3 +66,7 @@ $(table).mousedown(function() {
 $('td').mousedown(function() {
     $(this).css("background-color", pickColor);
 });
+
+
+
+

@@ -1,3 +1,6 @@
 # pixel_art_maker
 This is my new project doing to submit to Udacity!!
-https://codepen.io/Atmos/pen/YLevPB
+
+Updated selector js responsiveness
+
+Check working at https://codepen.io/Atmos/pen/YLevPB
